@@ -1,43 +1,121 @@
 // Import all of Bootstrap’s CSS
 @import "bootstrap/scss/bootstrap";
-nav{
-    margin-left: 10px;
-    margin-right: 10px;
-    .custom-button-bg{
-        background-color: #FAD725;
-    }
-    .font-color{
-        color: #212528;
-        font-size: 24px;
-    }
-    .gp-item{
-        margin-right: 20px;
-    }
-    .font-style{
-        font-weight: 400;
-        font-family: "poppins";
-    }
-    .content-center{
-        margin-right: 250px;
-    }
-    .home-gap-item{
-        margin-right: 20px;
-    }
-    .project-gap-item{
-        margin-right: 20px;
-    }
-    .blog-gap-item{
-        margin-right: 20px;
-    }
-    .price-gap-item{
-        margin-right: 20px;
-    }
+nav {
+	margin-left: 10px;
+	margin-right: 10px;
+	.custom-button-bg {
+		background-color: #fad725;
+	}
+	.font-color {
+		color: #212528;
+		font-size: 24px;
+	}
+	.gp-item {
+		margin-right: 20px;
+	}
+	.font-style {
+		font-weight: 400;
+		font-family: "poppins";
+	}
+	.content-center {
+		margin-right: 250px;
+	}
+	.home-gap-item {
+		margin-right: 20px;
+	}
+	.project-gap-item {
+		margin-right: 20px;
+	}
+	.blog-gap-item {
+		margin-right: 20px;
+	}
+	.price-gap-item {
+		margin-right: 20px;
+	}
 }
-section{
-    .Take-img{
-        margin-left: 30px;
-    }
-    .btn-color{
-        background-color: #FAD725;
+section {
+	.Take-img {
+		margin-left: 30px;
+	}
+	.btn-color {
+		background-color: #fad725;
+	}
+	.custom-border {
+		width: 300px;
+		margin-right: 100px;
+		p {
+			color: #212528;
+		}
+	}
+}
+.flex-row {
+    gap: 10px;
+	.text-style {
+		padding-top: 40px;
+	}
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+	.card-part {
+		flex: 1 1 30%;
+		margin: 10px;
+		box-shadow: 2px 2px 2px #888888;
+    //    outline: none;
+    border-radius: 2px;
+	}
+	margin-bottom: 50px;
+}
+.optimize-section {
+	margin-left: 5%;
+    margin-bottom: 10px;
+	h6 {
+		font-size: 55px;
+		font-weight: 500;
+		font-style: "poppins";
+	}
+	span {
+		color: #6f77f1;
+	}
+	P {
+		font-size: 20px;
+		font-family: "poppins";
+		padding-top: 20px;
+		color: #727272;
+	}
+	.col {
+		.card {
+			height: fit-content;
+			width: fit-content;
+            margin-right: 30px;
+            margin-top: 40px;
+            border: none;
+			.card-body {
+				margin-top: 40px;
+				.card-text {
+					color: #828282;
+				}
+			}
+			.custom-image {
+				padding-left: 20px;
+				padding-top: 20px;
+			}
+		}
+	}
+}
+.hero-section-business{
+    border-top: 2px solid #FAFAFA;
+    border-bottom: 2px solid #FAFAFA;
+    .content-section{
+        padding-left: 40px;
+        padding-right: 40px;
+        h6{
+            font-weight: lighter;
+            font-size: 55px;
+        }
+        .para-color{
+            color: #828282;
+            font-size: 17px;
+        }
     }
 }
