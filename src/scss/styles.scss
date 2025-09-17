@@ -15,7 +15,10 @@ nav {
 	}
 	.font-color {
 		color: #212528;
-		font-size: 24px;
+		font-size: 35px;
+		span{
+			margin-bottom: auto;
+		}
 	}
 	.gp-item {
 		margin-right: 20px;
@@ -40,6 +43,7 @@ nav {
 		margin-right: 20px;
 	}
 }
+
 section {
 	text-align: center;
 	.btn-color {
@@ -75,6 +79,7 @@ section {
 	margin-left: 5%;
     margin-bottom: 10px;
 	text-align: center;
+	padding-right: 0;
 	h6 {
 		font-size: 55px;
 		font-weight: 500;
@@ -89,31 +94,34 @@ section {
 		font-family: "poppins";
 		padding-top: 20px;
 		color: #727272;
+		margin-bottom: 50px;
+		line-height: 30px;
 	}
 	.col {
 		.card {
 			height: fit-content;
-			width: fit-content;
-            margin-right: 30px;
-            margin-top: 40px;
+			//width: fit-content;
             border: none;
 			.card-body {
-				margin-top: 40px;
 				.card-text {
-					color: #828282;
+					color: #727272;
+					font-size: 17px;
+					line-height: 27px;
+					font-weight: 400;
 				}
 			}
 			.custom-image {
-				padding-left: 20px;
 				padding-top: 20px;
 			}
 		}
 	}
 }
+
 .hero-section-business{
     border-top: 2px solid #FAFAFA;
     border-bottom: 2px solid #FAFAFA;
     .content-section{
+
         h6{
             font-size: 55px;
             color: #212528;
@@ -125,6 +133,12 @@ section {
             color: #828282;
             font-size: 17px;
         }
+		.btn-color{
+			border: none;
+			height: 50px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
     }
 	.custom-font{
 		font-weight: 500;
@@ -133,7 +147,7 @@ section {
 }
 
 .advartizement{
-	text-align: center;
+	//text-align: center;
 	.card-group{
 		.card{
 			border: none;
@@ -145,14 +159,19 @@ section {
 				.card-title{
 					font-size: 22px;
 					font-weight: 500;
-					color: #212529;
+					color: #212528;
 					font-family: "poppins";
 				}
-				.advertise-style{
+				.card-text{
 					font-size: 17px;
 					font-weight: 400;
-					color: #828282;
+					line-height: 27px;
 				}
+				// .advertise-style{
+				// 	font-size: 17px;
+				// 	font-weight: 400;
+				// 	color: #828282;
+				// }
 				.card-link{
 					font-size: 14px;
 					color: #6F77F1;
@@ -173,6 +192,13 @@ section {
 	span {
 		color: #6f77f1;
 	}
+	.section-title{
+		font-size: 17px;
+		line-height: 27px;
+		font-weight: 400;
+		color: #828282;
+		font-style: regular;
+	}
 	.card-group{
 		margin-left: auto;
 		margin-right: auto;		
@@ -186,14 +212,14 @@ section {
 				.card-title{
 					font-size: 20px;
 					font-weight: 500;
-					color: #828282;
+					color: #212528;
 				}
-				.card-text{
+				.feature-color{
 					font-size: 17px;
 					font-family: "poppins";
 					font-weight: 400;
 					line-height: 27px;
-					color: #212528;
+					color: #828282;
 				}
 		}
 		}
@@ -201,21 +227,6 @@ section {
   }
 }
 
-
-
-
-
-.text-style {
-	font-family: 'Poppins', sans-serif;
-	font-weight: 500;
-	font-size: 2.25rem; 
-	line-height: 65px;
-	color: #212528; 
-  
-	span {
-	  color: #6F77F1; 
-	}
-  }
   .card {
 	border: 1px solid #e0e0e0;
 	border-radius: 10px;
@@ -241,66 +252,174 @@ section {
 	  max-width: 60px;
 	}
   }
-  .custom-design {
-	padding-left: 1rem;
-	.need-text{
-		font-size: 17px;
-		font-weight: 400;
-		line-height: 27px;
-		color: #828282;
-	} 
-	.horizontal-card{
-		.card-body{
-			.card-title{
-				font-size: 23px;
-				font-weight: 500;
-				color: #212528;
-			}
-			.card-text{
-				color: #828282;
-			}
-		}
-	}
-  }
+// .needing-section{
+// 	.row{
+// 		.card-section{
+// 			.card-body{
+// 				.card-title{
+// 					font-size: 23px;
+// 					font-weight: 500;
+// 					color: #212528;
+// 				}
+// 				.card-text{
+// 					font-size: 17px;
+// 					line-height: 27px;
+// 					font-weight: 400;
+// 					color: #828282;
+// 				}
 
-
-
-
-
-
-
-
-
-  .custom-container{
-    border: 1px solid #E1E1E1;
-	margin-left: 5px;
-	.custom-row{
-		margin-left: auto;
-		margin-right: auto;
-
-		padding-top: 10px;
-		padding-bottom: 10px;
-		h2{
-			color: #666565;
-			font-size: 55px;
-			font-weight: 600;
-		}
-		p{
-			color: #6f6F6F;
-			font-size: 17px;
-			font-weight: 500;
-		}
-	}
-  }
-.web-speed{
-	.heading-style{
-		font-size: 35px;
+// 			}
+// 		}
+// 	}
+	// .text-style{
+	// 	font-size: 45px;
+	// 	font-weight: 500;
+	// 	line-height: 65px;
+	// 	color: #212528;
+	// 	span{
+	// 		color: #6F77F1;
+	// 	}
+	// }
+	// .need-text{
+	// 	font-size: 17px;
+	// 	line-height: 27px;
+	// 	font-weight: 400;
+	// 	color: #828282;
+	// }
+// }
+.seo-container{
+	.text-style{
+		font-size: 45px;
 		font-weight: 500;
+		line-height: 65px;
+		color: #212528;
 		span{
 			color: #6F77F1;
 		}
 	}
-	.para-style{
+	.need-text{
+		font-size: 17px;
+		line-height: 27px;
+		font-weight: 400;
 		color: #828282;
 	}
+	.needing-text{
+		font-size: 23px;
+		font-weight: 500;
+		color: #212528;
+	}
+	.needing-para{
+		font-size: 17px;
+		font-weight: 400;
+		line-height: 27px;
+		color: #828282;
+	}
+	.scalable-box {
+		transition: transform 0.2s ease-in-out; 
+	  }
+	  
+	  .scalable-box:hover {
+		transform: scale(1.1); 
+	  }
+}
+
+.review-container {
+	width: full;
+	.review-container-inner {
+	  //width: fit-content;
+	  border: 1px solid rgba(225, 225, 225, 1);
+	  gap: 20px;
+	  padding: 34px 44px;
+	  h4 {
+		font-size: 34px;
+		color: rgba(102, 101, 101, 1);
+	  }
+	  p {
+		color: rgba(111, 111, 111, 1);
+	  }
+	}
+  }
+
+.web-speed-section {
+	.heading-style{
+		font-weight: 500;
+		line-height: 65px;
+		font-size: 55px;
+		.font-extra-color{
+			color: #6F77F1;
+		}
+	}
+	.paraWebspeed-color{
+		font-size: 17px;
+		font-weight: 400;
+		line-height: 27px;
+		color: #828282;
+	}
+	.yellow-btn {
+		background-color: #fad725;
+		border: none;
+		border-radius: 4px;
+		width: fit-content;
+		padding: 14px 28px;
+	  }
+	  .inputs{
+		background-color: #B6B6B6;
+		.input-field{
+			width: 250px;
+		}
+	  }
+	  .website-speed-container {
+		button {
+		  border-radius: 2.48px;
+		  width: fit-content;
+		  padding: 14px 28px;
+		}
+	  }
+}
+
+.font-special-color {
+	color: #6f77f1;
+  }
+.pricing-container{
+	  .translate-card {
+		transition: transform 0.3s ease;
+	  }
+	  .translate-card:hover {
+		transform: scale(1.2);
+		background-color: #6f77f1;
+		color: white;
+	  }
+	.pricing-container .row .col-12 .card .card-top p {
+		color: #6f77f1;
+	  }
+	  .pricing-container .row .col-12 .card:hover .card-body p {
+		color: white;
+	  }
+	  .pricing-container .row .col-12 .card:hover .card-top p {
+		color: white;
+	  }
+	  .para-color1 {
+		color: #727272;
+	  }
+	  .para-color2 {
+		color: #828282;
+	  }
+	  .para-color3 {
+		color: #727272;
+	  }
+	  .heading-responsive-size {
+		font-size: 55px;
+		font-weight: 500;
+	  }
+	  .para-responsive-size {
+		font-size: 20px;
+		font-weight: 400;
+	  }
+	  .plan-btn{
+		border-radius: 4px;
+		border: 1px solid black;
+		width: fit-content;
+		padding: 14px 28px;
+	  }
+	  
 }
