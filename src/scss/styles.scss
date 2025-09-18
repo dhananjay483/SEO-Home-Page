@@ -4,6 +4,7 @@
 
 body {
 	font-family: "Poppins", sans-serif;
+	background-image: url("../images/body.jpg");
 }
 
 nav {
@@ -45,7 +46,30 @@ nav {
 
 section {
 	text-align: center;
+	.hero-text-heading {
+		font-size: 50px;
+		font-weight: 700;
+		color: #212528;
+		.text-span {
+			color: #6f77f1;
+		}
+	}
+	.hero-text-para {
+		font-size: 20px;
+		line-height: 30px;
+		font-weight: 400;
+		color: #727272;
+	}
 	.btn-color {
+		font-size: 20px;
+		font-weight: 500;
+		color: #212528;
+		background-color: #fad725;
+	}
+	.hero-btn {
+		font-size: 24px;
+		font-weight: 500;
+		color: #212528;
 		background-color: #fad725;
 	}
 	.custom-border {
@@ -56,13 +80,29 @@ section {
 		}
 	}
 }
+@media (768px <= width <= 1440px) {
+	.hero-text-heading {
+		text-align: left;
+	}
+}
+@media (max-width: 1000px) {
+	.text-modify {
+		text-align: left;
+	}
+}
 
 .container {
 	.row {
 		.card {
+			.card-text {
+				font-size: 17px;
+				font-weight: 400;
+				line-height: 27px;
+				color: #828282;
+			}
 			.media-manage {
 				.media-style {
-					font-size: 20px;
+					//font-size: 15px;
 					font-weight: 400;
 					color: #212528;
 				}
@@ -70,7 +110,16 @@ section {
 					color: #828282;
 				}
 			}
+			.img-arrow {
+				width: 10%;
+				align-self: flex-end;
+			}
 		}
+	}
+}
+@media (min-width: 768px) {
+	.media-style {
+		font-size: 22px;
 	}
 }
 
@@ -84,6 +133,9 @@ section {
 		font-weight: 500;
 		font-style: "poppins";
 		color: #212528;
+		padding-top: 50px;
+		padding-bottom: 30px;
+
 	}
 	span {
 		color: #6f77f1;
@@ -95,34 +147,53 @@ section {
 		color: #727272;
 		margin-bottom: 50px;
 		line-height: 30px;
+		padding-bottom: 50px;
+
 	}
-	.col {
-		.card {
-			height: fit-content;
-			//width: fit-content;
-			border: none;
-			.card-body {
-				.card-text {
-					color: #727272;
-					font-size: 17px;
-					line-height: 27px;
-					font-weight: 400;
-				}
+}
+.col {
+	.card {
+		height: fit-content;
+		border: none;
+		.card-body {
+			.card-text {
+				color: #727272;
+				font-size: 17px;
+				line-height: 27px;
+				font-weight: 400;
 			}
-			.custom-image {
-				padding-top: 20px;
+			.optimize-text-left {
+				text-align: left;
 			}
+		}
+		.custom-image {
+			margin: 0;
+			margin-left: 1rem;
+			width: 20%;
+			padding-bottom: 10%;
 		}
 	}
 }
-
+@media (768px <= width <= 1440px) {
+	h6 {
+		text-align: left;
+	}
+	p {
+		text-align: left;
+	}
+}
 .hero-section-business {
 	border-top: 2px solid #fafafa;
 	border-bottom: 2px solid #fafafa;
+	.business-gap{
+		padding-top: 100px;
+		padding-bottom: 50px;
+	}
 	.content-section {
-		h6 {
+		h5 {
 			font-size: 55px;
 			color: #212528;
+			font-weight: 500;
 			.custom-text {
 				color: #6f77f1;
 			}
@@ -138,19 +209,55 @@ section {
 			padding-right: 20px;
 		}
 	}
-	.custom-font {
-		font-weight: 500;
-		font-family: "poppins";
+}
+@media (max-width: 662px) {
+	.content-section {
+		text-align: center;
+	}
+}
+@media (663px <= width <= 1440px) {
+	.content-section {
+		text-align: left;
 	}
 }
 
-.advartizement {
+/* @mixin respond-to($breakpoint) {
+// 	@if $breakpoint == small {
+// 	  @media (max-width: 562px) {
+// 		@content;
+// 	  }
+// 	} @else if $breakpoint == large {
+// 	  @media (min-width: 563px) {
+// 		@content;
+// 	  }
+// 	}
+//   }
+//   .content-section {
+// 	@include respond-to(small) {
+// 	  display: flex;
+// 	  justify-content: center;
+// 	  align-items: center;
+// 	  flex-direction: column;
+// 	  text-align: center;
+// 	}
+//   }
+//   .content-section {
+// 	@include respond-to(large) {
+// 	  display: block; 
+// 	  text-align: left;
+// 	}
+//   } */
+
+.advartizement ✅ {
 	//text-align: center;
 	.card-group {
 		.card {
 			border: none;
 			margin: 18px;
 			border-radius: 10px;
+			.style-padding {
+				padding-left: 20px;
+			}
 
 			.card-body {
 				border: none;
@@ -165,11 +272,6 @@ section {
 					font-weight: 400;
 					line-height: 27px;
 				}
-				// .advertise-style{
-				// 	font-size: 17px;
-				// 	font-weight: 400;
-				// 	color: #828282;
-				// }
 				.card-link {
 					font-size: 14px;
 					color: #6f77f1;
@@ -239,7 +341,6 @@ section {
 
 	.card-img-top {
 		object-fit: contain;
-		margin: 0 auto 1rem auto;
 	}
 	img.w-50 {
 		width: 50% !important;
@@ -250,41 +351,7 @@ section {
 		max-width: 60px;
 	}
 }
-// .needing-section{
-// 	.row{
-// 		.card-section{
-// 			.card-body{
-// 				.card-title{
-// 					font-size: 23px;
-// 					font-weight: 500;
-// 					color: #212528;
-// 				}
-// 				.card-text{
-// 					font-size: 17px;
-// 					line-height: 27px;
-// 					font-weight: 400;
-// 					color: #828282;
-// 				}
 
-// 			}
-// 		}
-// 	}
-// .text-style{
-// 	font-size: 45px;
-// 	font-weight: 500;
-// 	line-height: 65px;
-// 	color: #212528;
-// 	span{
-// 		color: #6F77F1;
-// 	}
-// }
-// .need-text{
-// 	font-size: 17px;
-// 	line-height: 27px;
-// 	font-weight: 400;
-// 	color: #828282;
-// }
-// }
 .seo-container {
 	.text-style {
 		font-size: 45px;
@@ -375,8 +442,6 @@ section {
 	}
 }
 
-
-
 .pricing-container {
 	.translate-card {
 		transition: transform 0.3s ease;
@@ -391,7 +456,7 @@ section {
 	}
 	.translate-card:hover .plan-btn {
 		background-color: #fad725;
-		color: white;
+		// color: white;
 		border: none;
 	}
 	.pricing-container .row .col-12 .card .card-top p {
@@ -429,14 +494,15 @@ section {
 		padding: 14px 28px;
 	}
 }
-.expert-container{
-	.expert-heading-size{
+
+.expert-container {
+	.expert-heading-size {
 		color: #212528;
-		span{
+		span {
 			color: #6f77f1;
 		}
 	}
-	.expert-text-size{
+	.expert-text-size {
 		font-size: 17px;
 		font-weight: 400;
 		line-height: 27px;
@@ -446,30 +512,30 @@ section {
 		height: fit-content;
 		border-radius: 2px;
 		transition: transform 0.3s ease;
-	  }
-	  .expert-card:hover,
-	  .feedback-card:hover {
+	}
+	.expert-card:hover,
+	.feedback-card:hover {
 		border: none;
 		box-shadow: 5px 5px 5px 6px rgba(240, 238, 238, 0.3);
-	  }
-	  .expert-card:hover h5 {
+	}
+	.expert-card:hover h5 {
 		color: rgba(111, 119, 241, 1);
-	  }
-	  .expart-font{
+	}
+	.expart-font {
 		font-size: 22px;
 		font-weight: 500;
 		color: #212528;
-	  }
-	  .expart-text{
+	}
+	.expart-text {
 		font-size: 15px;
 		font-weight: 400;
-		color: #A3A2A2;
-	  }
+		color: #a3a2a2;
+	}
 }
 
-@media (min-width:768px) {
-	.expert-heading-size{
-		font-size:55px;
+@media (min-width: 768px) {
+	.expert-heading-size {
+		font-size: 55px;
 		line-height: 65px;
 		color: #212528;
 		margin-bottom: 20px;
