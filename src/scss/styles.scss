@@ -4,102 +4,151 @@
 
 body {
 	font-family: "Poppins", sans-serif;
-	background-image: url("../images/body.jpg");
+	background-image: url("../images/body1.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	animation: background-pan 15s linear infinite alternate;
+}
+
+@keyframes background-pan {
+	0% {
+		background-position: 0% 0%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 0%;
+	}
 }
 
 nav {
 	margin-left: 10px;
 	margin-right: 10px;
+
 	.custom-button-bg {
 		background-color: #fad725;
 	}
+
 	.font-color {
 		color: #212528;
 		font-size: 35px;
+
 		span {
 			margin-bottom: auto;
 		}
 	}
+
 	.gp-item {
 		margin-right: 20px;
 	}
+
 	.font-style {
 		font-weight: 400;
 		font-family: "poppins";
 	}
+
 	.content-center {
 		margin-right: 250px;
 	}
+
 	.home-gap-item {
 		margin-right: 20px;
 	}
+
 	.project-gap-item {
 		margin-right: 20px;
 	}
+
 	.blog-gap-item {
 		margin-right: 20px;
 	}
+
 	.price-gap-item {
 		margin-right: 20px;
 	}
+
 	.nav-link {
 		transition: color 0.3s linear;
 	}
+
 	.nav-link:hover {
 		border-bottom: 3px solid #6f77f1;
 	}
 }
 
-section {
+.hero-section {
 	text-align: center;
+
 	.hero-text-heading {
-		font-size: 50px;
 		font-weight: 700;
 		color: #212528;
+
 		.text-span {
 			color: #6f77f1;
 		}
 	}
+
 	.hero-text-para {
 		font-size: 20px;
 		line-height: 30px;
 		font-weight: 400;
 		color: #727272;
 	}
+
 	.btn-color {
 		font-size: 20px;
 		font-weight: 500;
 		color: #212528;
 		background-color: #fad725;
 	}
+
 	.hero-btn {
 		font-size: 24px;
 		font-weight: 500;
 		color: #212528;
 		background-color: #fad725;
 	}
+
 	.custom-border {
 		width: 300px;
 		margin-right: 100px;
+
 		p {
 			color: #212528;
 		}
 	}
 }
-@media (768px <= width <= 1440px) {
+@media (min-width: 570px) {
 	.hero-text-heading {
+		font-size: 50px;
+		text-align: left;
+	}
+
+	.hero-text-para {
 		text-align: left;
 	}
 }
-@media (max-width: 1000px) {
-	.text-modify {
-		text-align: left;
+@media (max-width:570px){
+	.hero-button{
+		justify-content: center;
+		align-items: center;
+	}
+}
+@media (min-width:571px){
+	.hero-button{
+		justify-content: left;
+		align-items: start;
 	}
 }
 
-.container {
+.media {
 	margin-top: 100px;
 	margin-bottom: 50px;
+
 	.row {
 		.card {
 			.card-text {
@@ -108,16 +157,19 @@ section {
 				line-height: 27px;
 				color: #828282;
 			}
+
 			.media-manage {
 				.media-style {
 					//font-size: 15px;
 					font-weight: 400;
 					color: #212528;
 				}
+
 				p {
 					color: #828282;
 				}
 			}
+
 			.img-arrow {
 				width: 10%;
 				align-self: flex-end;
@@ -125,6 +177,7 @@ section {
 		}
 	}
 }
+
 @media (min-width: 768px) {
 	.media-style {
 		font-size: 22px;
@@ -136,17 +189,20 @@ section {
 	margin-bottom: 10px;
 	text-align: center;
 	padding-right: 0;
-	h6 {
-		font-size: 55px;
+
+	.opt-text-gap {
+		//font-size: 55px;
 		font-weight: 500;
 		font-style: "poppins";
 		color: #212528;
-		padding-top: 50px;
+		padding-top: 100px;
 		padding-bottom: 30px;
 	}
+
 	span {
 		color: #6f77f1;
 	}
+
 	P {
 		font-size: 20px;
 		font-family: "poppins";
@@ -156,11 +212,34 @@ section {
 		line-height: 30px;
 		padding-bottom: 50px;
 	}
+
+	.row {
+		padding-bottom: 100px;
+	}
 }
+
+@media only screen and (min-width: 601px) {
+	.opt-text-gap {
+		font-size: 50px;
+		text-align: left;
+	}
+
+	p {
+		text-align: left;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.opt-text-gap {
+		font-size: 30px;
+	}
+}
+
 .col {
 	.card {
 		height: fit-content;
 		border: none;
+
 		.card-body {
 			.card-text {
 				color: #727272;
@@ -168,10 +247,12 @@ section {
 				line-height: 27px;
 				font-weight: 400;
 			}
+
 			.optimize-text-left {
 				text-align: left;
 			}
 		}
+
 		.custom-image {
 			margin: 0;
 			margin-left: 1rem;
@@ -180,50 +261,72 @@ section {
 		}
 	}
 }
-@media (768px <= width <= 1440px) {
+
+@media (768px <=width <=1440px) {
 	h6 {
 		text-align: left;
 	}
+
 	p {
 		text-align: left;
 	}
 }
+
 .hero-section-business {
 	border-top: 2px solid #fafafa;
 	border-bottom: 2px solid #fafafa;
+
 	.business-gap {
 		padding-top: 100px;
 		padding-bottom: 50px;
 	}
+
 	.content-section {
-		h5 {
-			font-size: 55px;
+		.solution-text {
 			color: #212528;
 			font-weight: 500;
+
 			.custom-text {
 				color: #6f77f1;
 			}
 		}
+
 		.para-color {
 			color: #828282;
 			font-size: 17px;
 		}
+
 		.btn-color {
 			border: none;
 			height: 50px;
 			padding-left: 20px;
 			padding-right: 20px;
+			background-color: #fad725;
 		}
 	}
 }
+
 @media (max-width: 662px) {
 	.content-section {
 		text-align: center;
 	}
 }
-@media (663px <= width <= 1440px) {
+
+@media (663px <=width <=1440px) {
 	.content-section {
 		text-align: left;
+	}
+}
+
+@media only screen and (max-width: 570px) {
+	.solution-text {
+		font-size: 30px;
+	}
+}
+
+@media only screen and (min-width: 571px) {
+	.solution-text {
+		font-size: 50px;
 	}
 }
 
@@ -261,23 +364,27 @@ section {
 			border: none;
 			margin: 18px;
 			border-radius: 10px;
+
 			.style-padding {
 				padding-left: 20px;
 			}
 
 			.card-body {
 				border: none;
+
 				.card-title {
 					font-size: 22px;
 					font-weight: 500;
 					color: #212528;
 					font-family: "poppins";
 				}
+
 				.card-text {
 					font-size: 17px;
 					font-weight: 400;
 					line-height: 27px;
 				}
+
 				.card-link {
 					font-size: 14px;
 					color: #6f77f1;
@@ -287,9 +394,23 @@ section {
 			}
 		}
 	}
+
 	.text-align {
 		margin-left: 30px;
 		margin-top: 30px;
+	}
+}
+
+@media (769px <=width <=960px) {
+	.row-cols-md-4 > * {
+		width: 50%;
+	}
+}
+
+@media (761px <=width <=1050px) {
+	.row-cols-md-4 > * {
+		width: 50%;
+		gap: 10px;
 	}
 }
 
@@ -298,6 +419,7 @@ section {
 		span {
 			color: #6f77f1;
 		}
+
 		.section-title {
 			font-size: 17px;
 			line-height: 27px;
@@ -305,21 +427,26 @@ section {
 			color: #828282;
 			font-style: regular;
 		}
+
 		.card-group {
 			margin-left: auto;
 			margin-right: auto;
 			border: none;
+
 			.card {
 				border: none;
 				box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
 				margin: 30px;
+
 				.card-body {
 					width: fit-content;
+
 					.card-title {
 						font-size: 20px;
 						font-weight: 500;
 						color: #212528;
 					}
+
 					.feature-color {
 						font-size: 17px;
 						font-family: "poppins";
@@ -348,10 +475,12 @@ section {
 	.card-img-top {
 		object-fit: contain;
 	}
+
 	img.w-50 {
 		width: 50% !important;
 		max-width: 80px;
 	}
+
 	img.image-pixel {
 		width: 50% !important;
 		max-width: 60px;
@@ -360,31 +489,35 @@ section {
 
 .seo-container {
 	.text-style {
-		font-size: 45px;
 		font-weight: 500;
-		line-height: 65px;
+		//line-height: 65px;
 		color: #212528;
+
 		span {
 			color: #6f77f1;
 		}
 	}
+
 	.need-text {
 		font-size: 17px;
 		line-height: 27px;
 		font-weight: 400;
 		color: #828282;
 	}
+
 	.needing-text {
 		font-size: 23px;
 		font-weight: 500;
 		color: #212528;
 	}
+
 	.needing-para {
 		font-size: 17px;
 		font-weight: 400;
 		line-height: 27px;
 		color: #828282;
 	}
+
 	.scalable-box {
 		transition: transform 0.2s ease-in-out;
 	}
@@ -394,17 +527,43 @@ section {
 	}
 }
 
+@media (max-width: 562px) {
+	.align-center {
+		align-items: center;
+	}
+}
+@media (max-width:550px){
+	.text-style{
+		font-size: 30px;
+		line-height: 50px;
+	}
+	.need-text{
+		padding-top: 10px;
+	}
+}
+@media (min-width:551px){
+	.text-style{
+		font-size: 55px;
+		line-height: 65px;
+	}
+	.need-text{
+		padding-top: 40px;
+	}
+}
 .review-container {
 	width: full;
+
 	.review-container-inner {
 		//width: fit-content;
 		border: 1px solid rgba(225, 225, 225, 1);
 		gap: 20px;
 		padding: 34px 44px;
+
 		h4 {
 			font-size: 34px;
 			color: rgba(102, 101, 101, 1);
 		}
+
 		p {
 			color: rgba(111, 111, 111, 1);
 		}
@@ -414,18 +573,21 @@ section {
 .web-speed-section {
 	.heading-style {
 		font-weight: 500;
-		line-height: 65px;
-		font-size: 55px;
+		//line-height: 65px;
+		//font-size: 55px;
+
 		.font-extra-color {
 			color: #6f77f1;
 		}
 	}
+
 	.paraWebspeed-color {
 		font-size: 17px;
 		font-weight: 400;
 		line-height: 27px;
 		color: #828282;
 	}
+
 	.yellow-btn {
 		background-color: #fad725;
 		border: none;
@@ -433,24 +595,29 @@ section {
 		width: fit-content;
 		padding: 14px 28px;
 	}
+
 	.yellow-btn:hover {
 		background-color: rgb(126, 126, 231);
 		color: white;
 	}
+
 	.inputs {
 		background-color: #dfdfdf;
 		border-radius: 5px;
 		border: none;
+
 		.input-field {
 			width: 250px;
 			background-color: #dfdfdf;
 			border: none;
 		}
+
 		.input-email {
 			border-left: 5px solid #dfdfdf;
 			width: 250px;
 		}
 	}
+
 	.website-speed-container {
 		button {
 			border-radius: 2.48px;
@@ -459,52 +626,76 @@ section {
 		}
 	}
 }
+@media (max-width:550px){
+	.heading-style{
+		font-size: 30px;
+		line-height: 45px;
+	}
+}
+@media (min-width:551px){
+	.heading-style{
+		font-size: 55px;
+		line-height: 65px;
+	}
+}
 
 .pricing-container {
 	.translate-card {
 		transition: transform 0.3s ease;
 	}
+
 	.translate-card:hover {
 		transform: scale(1.2);
 		background-color: #6f77f1;
 		color: white;
 	}
+
 	.translate-card:hover p {
 		color: white;
 	}
+
 	.translate-card:hover .plan-btn {
 		background-color: #fad725;
 		// color: white;
 		border: none;
 	}
+
 	.pricing-container .row .col-12 .card .card-top p {
 		color: #6f77f1;
 	}
+
 	.pricing-container .row .col-12 .card:hover .card-body p {
 		color: white;
 	}
+
 	.pricing-container .row .col-12 .card:hover .card-top p {
 		color: white;
 	}
+
 	.para-color1 {
 		color: #828282;
 		font-size: 17px;
 		line-height: 27px;
 	}
+
 	.para-color2 {
 		color: #828282;
 	}
+
 	.para-color3 {
 		color: #727272;
 	}
+
 	.heading-responsive-size {
 		font-size: 55px;
 		font-weight: 500;
 	}
+
 	.para-responsive-size {
 		font-size: 20px;
 		font-weight: 400;
 	}
+
 	.plan-btn {
 		border-radius: 4px;
 		border: 1px solid black;
@@ -516,34 +707,41 @@ section {
 .expert-container {
 	.expert-heading-size {
 		color: #212528;
+
 		span {
 			color: #6f77f1;
 		}
 	}
+
 	.expert-text-size {
 		font-size: 17px;
 		font-weight: 400;
 		line-height: 27px;
 		color: #828282;
 	}
+
 	.expert-card {
 		height: fit-content;
 		border-radius: 2px;
 		transition: transform 0.3s ease;
 	}
+
 	.expert-card:hover,
 	.feedback-card:hover {
 		border: none;
 		box-shadow: 5px 5px 5px 6px rgba(240, 238, 238, 0.3);
 	}
+
 	.expert-card:hover h5 {
 		color: rgba(111, 119, 241, 1);
 	}
+
 	.expart-font {
 		font-size: 22px;
 		font-weight: 500;
 		color: #212528;
 	}
+
 	.expart-text {
 		font-size: 15px;
 		font-weight: 400;
@@ -557,5 +755,76 @@ section {
 		line-height: 65px;
 		color: #212528;
 		margin-bottom: 20px;
+	}
+}
+
+.feedback-card {
+	width: 450px;
+	border-radius: 2px;
+}
+
+.feedback-container-row-items {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	gap: 12px;
+	overflow-x: auto;
+
+	.feedback-container-row-item {
+		float: 0 0 auto;
+	}
+
+	.para-color-feedback {
+		font-size: 17px;
+		line-height: 27px;
+		color: #828282;
+		font-weight: 400;
+	}
+
+	.card-title {
+		font-size: 12px;
+		color: #212528;
+		font-weight: 500;
+	}
+
+	.card-text {
+		font-size: 12px;
+		font-weight: 400;
+		color: #828282;
+	}
+}
+
+.w-responsive-45 {
+	// width: 45%;
+	font-size: 17px;
+	line-height: 27px;
+	color: #828282;
+}
+
+.w-responsive-40 {
+	// width: 40%;
+}
+
+.w-responsive-50 {
+	width: 50%;
+}
+
+.w-responsive-75 {
+	width: 75%;
+}
+
+.width-75 {
+	width: 75%;
+}
+
+@media only screen and (min-width: 466px) {
+	.feedback-heading-responsive-size {
+		font-size: 55px;
+	}
+}
+
+@media only screen and (max-width: 465px) {
+	.feedback-heading-responsive-size {
+		font-size: 30px;
 	}
 }
