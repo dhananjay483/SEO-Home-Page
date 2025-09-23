@@ -880,6 +880,14 @@ $animation-duration: 30s;
         opacity: 0.7;
         line-height: 1.6;
     }
+	.section-title{
+		color: #212528;
+		font-weight: 500;
+	}
+	.section-subtitle{
+		color: #828282;
+		font-weight: 400;
+	}
 }
 
 // Marquee container
@@ -956,7 +964,8 @@ $animation-duration: 30s;
     }
 
     .testimonial-text {
-        color: $text-dark;
+		color: #828282;
+		font-weight: 400;
         font-size: 14px;
         line-height: 1.6;
         margin-bottom: 25px;
@@ -987,7 +996,7 @@ $animation-duration: 30s;
         .client-name {
             color: $text-dark;
             font-size: 16px;
-            font-weight: 600;
+            font-weight: 500;
             margin-bottom: 2px;
         }
 
@@ -996,6 +1005,7 @@ $animation-duration: 30s;
             font-size: 14px;
             margin: 0;
             text-align: center;
+			font-weight: 400;
         }
     }
 }
@@ -1073,25 +1083,30 @@ $animation-duration: 30s;
     }
 
 }
+
+
 .footer-section{
 	.sub-heading{
-		font-size: 20px;
+		//font-size: 20px;
 		color: #212528;
 		font-weight: 500;
+		padding-left: 40px;
 	}
 	.sub-text{
-		font-size: 18px;
+		//font-size: 18px;
 		color: #909090;
 		font-weight: 400;
 		padding-left: 10px;
+		text-align: center;
 	}
 	.subs-form{
 		.sub-email{
-			height: 40px;
+			height: 54px;
 			color: #727272;
+			font-weight: 400;
 		}
 		.sub-name{
-			height: 40px;
+			height: 54px;
 			color: #727272;
 			font-weight: 400;
 		}
@@ -1113,7 +1128,8 @@ $animation-duration: 30s;
 }
 @media (min-width:551px){
 	.sub-btn{
-		height: 40px;
+		height: 54px;
+		padding-left: 30px;
 	}
 	.sub-name{
 		width: 36%;
@@ -1139,8 +1155,6 @@ $animation-duration: 30s;
 		border-radius: 5px;
 		padding-left: 20px;
 		font-size: 19px;
-
-
 	}
 	.sub-email{
 		width: 29%;
@@ -1150,4 +1164,34 @@ $animation-duration: 30s;
 		font-size: 19px;
 		
 	}
+	.sub-btn{
+		padding-right: 30px;
+	}
+	.sub-heading{
+		font-size: 50px;
+		color: #212528;
+		font-weight: 500;
+	}
+	.sub-text{
+		font-size: 20px;
+		color: #909090;
+		font-weight: 400;
+		padding-left: 10px;
+	}
 }
+.footer-end-section {
+	p,
+	ul li {
+	  font-size: 14px;
+	}
+  }
+  .footer-end-section {
+    padding-left: 183px;
+    padding-right: 183px;
+  }
+  .footer-hr {
+    width: 88% ;
+  }
+  .footer-top-section{
+	margin-top: 10%;
+  }
